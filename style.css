@@ -35,3 +35,16 @@ img {
     object-fit: cover;
     overflow: hidden;
 }
+
+select{
+    width:115px;
+    background-color:rgb(203, 233, 213)
+   
+}
+
+option {
+    background-color: white;
+    cursor:pointer;
+    color:black
+
+}
