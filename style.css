@@ -11,8 +11,8 @@ body {
     flex-direction: column;
   
     border:2px solid rgb(13, 14, 13);
-    width:300px;
-    height:458px;
+    width:385px;
+    height:522px;
     justify-items: center;
     align-items: center;
     background-color: rgb(242, 248, 248);
@@ -31,9 +31,11 @@ body {
 
 
 img {
+    width:385px;
     max-width: 500px;
     object-fit: cover;
     overflow: hidden;
+    padding-bottom:15px;
 }
 
 select{
@@ -47,4 +49,8 @@ option {
     cursor:pointer;
     color:black
 
+}
+
+div {
+    padding-bottom:15px;
 }
