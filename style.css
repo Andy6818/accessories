@@ -1,3 +1,7 @@
+
+
+
+
 body {
     background-color: palegoldenrod;
     padding: 10px;
@@ -38,18 +42,27 @@ img {
     padding-bottom:15px;
 }
 
-select{
+/* select{
     width:115px;
     background-color:rgb(203, 233, 213)
    
-}
+} */
 
-option {
-    background-color: white;
+/* option[value="1"] {
+    background-color: rgb(115, 83, 230);
     cursor:pointer;
     color:black
 
 }
+
+option [value="2"] {
+    background-color: rgb(115, 83, 230);
+    cursor:pointer;
+    color:black
+
+} */
+
+
 
 div {
     padding-bottom:15px;
