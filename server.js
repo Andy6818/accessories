@@ -126,7 +126,7 @@ app.post("/add-to-cart", async(req,res)=>{
 
     console.log(user)
 
-    res.send("congratuation you form have been submitted successfully")
+    res.send("https://andy6818.github.io/accessories/")
     
   
     
