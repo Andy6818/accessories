@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended : true}))
 
 // mongoose.connect("mongodb://127.0.0.1:27017/students")
 
-mongoose.connect("mongodb://127.0.0.1:27017/andydatasystem")
+mongoose.connect("mongodb+srv://andytst2005:<db_password>@cluster0.rqgds42.mongodb.net/andydatasystem")
 
 
 
@@ -126,7 +126,7 @@ app.post("/add-to-cart", async(req,res)=>{
 
     console.log(user)
 
-    res.send("https://andy6818.github.io/accessories/")
+    res.send("thanks you for you submitted it")
     
   
     
