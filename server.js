@@ -125,7 +125,8 @@ app.post("/data", async(req,res)=>{
 
     console.log(user)
 
-    res.send("thanks you for you submitted")
+    // res.send("thanks you for you submitted")
+    res.sendFile(path.join(__dirname,"andy.html")
     
   
     
