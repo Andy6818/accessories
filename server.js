@@ -125,7 +125,7 @@ app.post("/add-to-cart", async(req,res)=>{
 
     console.log(user)
 
-    res.send("thanks you for you submitted")
+    // res.send("thanks you for you submitted")
     
   
     
