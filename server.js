@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended : true}))
 
 // mongoose.connect("mongodb://127.0.0.1:27017/students")
 
-mongoose.connect("mongodb://0.0.0.0/0/andydatasystem")
+mongoose.connect("mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/crud")
 
 
 const db = mongoose.connection
@@ -148,3 +148,14 @@ app.get("/",(req,res)=>
 app.listen(port,()=>{
  console.log("server started")
 })
+
+
+
+// const db = 'mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/'
+// mongoose
+//     .connect(db, { 
+      
+      
+//       })
+//     .then(() => console.log('MongoDB connected...'))
+//     .catch(err => console.log(err));
