@@ -60,7 +60,7 @@ const userSchema = new mongoose.Schema({
 
 const Users = mongoose.model("data", userSchema)
 
-app.post("/submit", async(req,res)=>{
+app.post("/data", async(req,res)=>{
      const {
         firstname,
         lastname,
