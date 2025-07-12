@@ -60,7 +60,7 @@ const userSchema = new mongoose.Schema({
 
 const Users = mongoose.model("data", userSchema)
 
-app.post("/add-to-cart", async(req,res)=>{
+app.post("/submit", async(req,res)=>{
      const {
         firstname,
         lastname,
@@ -125,7 +125,7 @@ app.post("/add-to-cart", async(req,res)=>{
 
     console.log(user)
 
-    // res.send("thanks you for you submitted")
+    res.send("thanks you for you submitted")
     
   
     
@@ -151,11 +151,3 @@ app.listen(port,()=>{
 
 
 
-// const db = 'mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/'
-// mongoose
-//     .connect(db, { 
-      
-      
-//       })
-//     .then(() => console.log('MongoDB connected...'))
-//     .catch(err => console.log(err));
