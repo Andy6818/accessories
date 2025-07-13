@@ -2,7 +2,7 @@
 const express = require("express")
 const mongoose =require("mongoose")
 const path =require("path")
-const port = 3000
+const port = 3010
 
 
 const app =  express();
@@ -60,7 +60,7 @@ const userSchema = new mongoose.Schema({
 
 const Users = mongoose.model("data", userSchema)
 
-app.post("/", async(req,res)=>{
+app.post("/submit",async(req,res)=>{
      const {
         firstname,
         lastname,
@@ -125,7 +125,7 @@ app.post("/", async(req,res)=>{
 
     console.log(user)
 
-     res.send("thanks you");
+      res.send("Congratuation you form have been submitted to Andy Chen successful,thanks you!")
     
   
     
