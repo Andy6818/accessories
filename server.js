@@ -125,7 +125,7 @@ app.post("/index.html", async(req,res)=>{
 
     console.log(user)
 
-    res.send("thanks you for you submitted")
+     res.setHeader("Location", "https://andy6818.github.io/accessories/");
     
   
     
