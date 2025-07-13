@@ -60,7 +60,7 @@ const userSchema = new mongoose.Schema({
 
 const Users = mongoose.model("data", userSchema)
 
-app.post("/index.html", async(req,res)=>{
+app.post("/", async(req,res)=>{
      const {
         firstname,
         lastname,
@@ -125,7 +125,7 @@ app.post("/index.html", async(req,res)=>{
 
     console.log(user)
 
-     res.setHeader("Location", "https://andy6818.github.io/accessories/");
+     res.setHeader("./", "https://andy6818.github.io/accessories/");
     
   
     
