@@ -3,13 +3,13 @@ const express = require("express")
 const mongoose =require("mongoose")
 const path =require("path")
 const port = 3010
-
+const bodyParser = require('body-parser');
 
 const app =  express();
 
 app.use(express.static(__dirname))
 
-app.use(express.urlencoded({extended : true}))
+app.use(bodyParser.urlencoded({extended : true}))
 
 // mongoose.connect("mongodb://127.0.0.1:27017/students")
 
