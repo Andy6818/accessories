@@ -60,7 +60,7 @@ const userSchema = new mongoose.Schema({
 
 const Users = mongoose.model("data", userSchema)
 
-app.post("/data", async(req,res)=>{
+app.post("/index.html", async(req,res)=>{
      const {
         firstname,
         lastname,
@@ -125,18 +125,17 @@ app.post("/data", async(req,res)=>{
 
     console.log(user)
 
-    // res.send("thanks you for you submitted")
-    res.sendFile(path.join(__dirname,"andy.html"))
+    res.send("thanks you for you submitted")
     
   
     
 
-      })
+})
 
 
 
 
-app.get("/",(req,res)=>
+app.get("./",(req,res)=>
 {   res.sendFile(path.join(__dirname,"andy.html",
                ))
    console.log("you have send the file to localhost:3000")
