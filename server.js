@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended : true}))
 
 // mongoose.connect("mongodb://127.0.0.1:27017/students")
 
-mongoose.connect("mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/crud")
+mongoose.connect("mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/crud")
 
 
 const db = mongoose.connection
@@ -125,7 +125,7 @@ app.post("/", async(req,res)=>{
 
     console.log(user)
 
-     res.setHeader("./", "https://andy6818.github.io/accessories/");
+     res.send("thanks you");
     
   
     
