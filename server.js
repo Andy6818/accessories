@@ -29,7 +29,7 @@ const userSchema = new mongoose.Schema({
     companyname:String,
     email:String,
     phone:String,
-    option:String,
+    // option:String,
     delivery:Date,
     comment:String,
     item_090:String,
@@ -50,7 +50,8 @@ const userSchema = new mongoose.Schema({
     item_015:String,
     item_016:String,
     item_017:String,
-    item_018:String
+    item_018:String,
+    item_019:String
   
   
 
@@ -67,7 +68,7 @@ app.post("/form-data",async(req,res)=>{
         companyname,
         email,
         phone,
-        option,
+        // option,
         delivery,
         comment,
         item_090,
@@ -87,7 +88,8 @@ app.post("/form-data",async(req,res)=>{
         item_015,
         item_016,
         item_017,
-        item_018
+        item_018,
+        item_019,
      } =req.body
 
     const user = new Users ({
@@ -96,7 +98,7 @@ app.post("/form-data",async(req,res)=>{
         companyname,
         email,
         phone,
-        option,
+        // option,
         delivery,
         comment,
         item_090,
@@ -116,7 +118,8 @@ app.post("/form-data",async(req,res)=>{
         item_015,
         item_016,
         item_017,
-        item_018
+        item_018,
+        item_019
     
     })
     
