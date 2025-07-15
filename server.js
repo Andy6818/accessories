@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended : true}))
 
 // mongoose.connect("mongodb://127.0.0.1:27017/students")
 
-mongoose.connect("mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/crub")
+mongoose.connect("mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/crued")
 
 
 const db = mongoose.connection
