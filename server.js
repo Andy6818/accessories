@@ -51,7 +51,12 @@ const userSchema = new mongoose.Schema({
     item_016:String,
     item_017:String,
     item_018:String,
-    item_019:String
+    item_019:String,
+    item_020:String,
+    item_021:String,
+    item_022:String,
+    item_023:String,
+    item_025:String
   
   
 
@@ -90,6 +95,11 @@ app.post("/form-data",async(req,res)=>{
         item_017,
         item_018,
         item_019,
+        item_020,
+        item_021,
+        item_022,
+        item_023,
+        item_025
      } =req.body
 
     const user = new Users ({
@@ -119,7 +129,12 @@ app.post("/form-data",async(req,res)=>{
         item_016,
         item_017,
         item_018,
-        item_019
+        item_019,
+        item_020,
+        item_021,
+        item_022,
+        item_023,
+        item_025
     
     })
     

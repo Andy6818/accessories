@@ -69,9 +69,11 @@ form select {
 form button {
     padding:8px;
     background-color:rgb(85, 140, 212);
-    border:none;
+    border:2px solid white;
     margin-top: 10px;
     font-size: 25px;
+    border-radius: 15px;
+    cursor:pointer;
 
 }
 
