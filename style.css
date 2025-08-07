@@ -183,7 +183,8 @@ img {
 
 #cart-container {
   display: inline;
-position:absolute;
+  position:absolute;
+  flex-wrap: wrap;
   top: 60px;
   right: 0;
   background-color:rgb(164, 197, 247);
@@ -194,6 +195,7 @@ position:absolute;
   text-align: center;
   font-size: 1.2rem;
   overflow-y: scroll;
+  overflow: cover;
 }
 
 #cart-container img {
