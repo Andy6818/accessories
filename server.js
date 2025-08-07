@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended : true}))
 
 // mongoose.connect("mongodb://127.0.0.1:27017/students")
 
-mongoose.connect("mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/crued")
+mongoose.connect("mongodb://127.0.0.1:27017/accessories")
 
 
 const db = mongoose.connection
@@ -66,7 +66,7 @@ const userSchema = new mongoose.Schema({
 
 const Users = mongoose.model("data", userSchema)
 
-app.post("/form-data",async(req,res)=>{
+app.post("/form/data",async(req,res)=>{
      const {
         firstname,
         lastname,
