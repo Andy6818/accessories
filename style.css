@@ -171,6 +171,7 @@ img {
 }
 
 #cart-btn {
+    /* display:fixed; */
   position: absolute;
   top: 0;
   right: 0;
@@ -182,7 +183,7 @@ img {
 
 #cart-container {
   display: inline;
-  position: fixed;
+position:absolute;
   top: 60px;
   right: 0;
   background-color:rgb(164, 197, 247);
@@ -311,3 +312,9 @@ form #option {
 padding:8px;
 
 }
+
+#cart-btn{
+   
+    font-size: 10px;
+}
+
