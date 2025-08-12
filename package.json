@@ -1,14 +1,26 @@
 {
+  "name": "accessories",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andy6818/accessories.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andy6818/accessories/issues"
+  },
+  "homepage": "https://github.com/Andy6818/accessories#readme",
   "dependencies": {
     "express": "^5.1.0",
-    "init": "^0.1.2",
-    "mongodb": "^6.18.0",
     "mongoose": "^8.17.1",
     "nodemon": "^3.1.10",
-    "part": "^0.1.1",
-    "socket.io": "^4.8.1",
-    "socket.io-client": "^4.8.1",
-    "sqlite": "^5.1.1",
-    "sqlite3": "^5.1.7"
+    "part": "^0.1.1"
   }
 }

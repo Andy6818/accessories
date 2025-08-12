@@ -1,85 +1,474 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Socket.IO chat</title>
-    <style>
-      body { justify-items:center; padding-bottom:0px; padding-top:15px;font-family:sans-serif; }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>accessories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>wholesales only(stores)</h1>
+  <p>please call or text sales representative Tel: 718-737-6818 (Andy)</p>
 
-      #form { background: rgba(0, 0, 0, 0.15); padding-bottom:0px; position:absolute;top:575px;  width:398px;left: auto; right: auto; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
-      #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
-      #input:focus { outline: none; }
-      #form > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
-
-      #messages { list-style-type: none; margin: 0; padding: 0; }
-      #messages > li { padding: 0.5rem 1rem; }
-      #messages > li:nth-child(odd) { background: #efefef; }
-      #container {
-        display:flex;
-        flex-direction: column;
-        box-shadow: 5px;
-        width:400px;
-        height:600px;
-        /* background-color: rgb(244, 248, 225); */
-        border:2px solid black;
-        
-      }
-
-      #chat{
-        padding-left:16px;
-        padding-top:11px;
-        justify-content: center;
-        width:387px;
-        height:50px;
-        background-color: #333;
-        color:white;
-      }
-    </style>
-  </head>
-  <body>
- 
-    <div id="container">   
-      
-        <div id="chat"><strong>Live Chat:<br>Representative:Andy</strong></div>
-       
-    <div><ul id="messages"></ul></div>
-    <form id="form" action="">
-      <input id="input" autocomplete="off" /><button>Send</button>
-
-    </div>
+  <form action="/submit-data" method="post">
+  
+  
+    <div id="mainContainer">
     
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-      let counter = 0;
-  
-      const socket = io({
-        ackTimeout: 10000,
-        retries: 0,
-        auth: {
-          serverOffset: 0
-        }
-      });
-  
-      const form = document.getElementById('form');
-      const input = document.getElementById('input');
-      const messages = document.getElementById('messages');
-  
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        if (input.value) {
-          const clientOffset = `${socket.id}-${counter++}`;
-          socket.emit('chat message', input.value, clientOffset);
-          input.value = '';
-        }
-      });
-  
-      socket.on('chat message', (msg, serverOffset) => {
-        const item = document.createElement('li');
-        item.textContent = msg;
-        messages.appendChild(item);
-        window.scrollTo(0, document.body.scrollHeight);
-        socket.auth.serverOffset = serverOffset;
-      });
-    </script>
-  </body>
+           
+            <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/2.jpg"></img>
+                <div><strong> Phone Holder</strong></div>
+                <div><strong> item:#090</strong></div>
+                
+                <div>wholesales price $3.50(each)</div>
+               
+                  <label for="item_090"><select  name="item_090" id="item_090">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+        
+            <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/3.jpg"></img>
+                <div><strong>usb cable for iphone</strong></div>
+                <div><strong>item:#001</strong></div>
+                <div>wholesales prices $1.75(each)</div>
+                
+               
+                  <label for="item_001"><select  name="item_001" id="item_001">
+                    <option value="">select</option>
+                    <option for="value"value="6pcs">6pcs</option>
+                    <option for="value"value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+
+           <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/809.jpg"></img>
+                <div><strong>2-in-1 for iphone15/16/samsung</strong></div>
+                <div><strong>item:#002</strong></div>
+              
+                <div>wholesales prices $3.75(each)</div>
+               
+                  <label for="item_002"><select  name="item_002" id="item_002">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/101.jpg"></img>
+                <div><strong>2-in-1 Wall charger</strong></div>
+                <div><strong>item:#003</strong></div>
+              
+                <div>wholesales prices $3.00(each)</div>
+               
+                  <label for="item_003"><select  name="item_003" id="item_003">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+
+
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/102.jpg"></img>
+                <div><strong>Stand Phone Holder</strong></div>
+                <div><strong>item:#004</strong></div>
+               
+                <div>wholesales prices $3.25(each)</div>
+               
+                  <label for="item_004"><select  name="item_004" id="item_004">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+
+              <div style="border:2px solid black; background-color:white; color:black">
+                <img src="./image/706.jpg"></img>   
+                <div><strong>headphone for iphone5/6/ipad/samsung</strong></div>
+                <div><strong>item:#005</strong></div>
+               
+                <div>wholesales prices $1.75(each)</div>
+               
+                  <label for="item_005"><select  name="item_005" id="item_005">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+            
+             <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/105.jpg"></img>
+                <div><strong>bicycle phone holder</strong></div>
+                <div><strong>item:#006</strong></div>
+                
+                <div>wholesales prices $4.50(each)</div>
+               
+                  <label for="item_006"><select  name="item_006" id="item_006">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+            
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/121.jpg"></img>
+                <div><strong>10ft cable type-c to type-c</strong></div>
+                <div><strong>item:#007</strong></div>
+                
+                <div>wholesales prices $2.25(each)</div>
+               
+                  <label for="item_007"><select  name="item_007" id="item_007">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+            
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/505.jpg"></img>
+                <div><strong>type-c to type-c</strong></div>
+                <div><strong>item:#008</strong></div>
+                
+                <div>wholesales prices $2.25(each)</div>
+               
+                  <label for="item_008"><select  name="item_008" id="item_008">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+            
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/607.jpg"></img>
+                <div><strong>Headphone for samsung/iphone 15/16</strong></div>
+                <div><strong>item:#009</strong></div>
+                <div>wholesales prices $2.75(each)</div>
+                
+               
+                  <label for="item_009"><select  name="item_009" id="item_009">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+            
+
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/609.jpg"></img>
+                <div><strong>Headphone for samsung/iphone15/16</strong></div>
+                <div><strong>item:#010</strong></div>
+                
+                <div>wholesales prices $2.75(each)</div>
+               
+                  <label for="item_010"><select  name="item_010" id="item_010">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+            
+
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/701.jpg"></img>
+                <div><strong>2-in-1 charger for iphone/samsung</strong></div>
+                <div><strong>item:#011</strong></div>
+            
+                <div>wholesales prices $3.75(each)</div>
+               
+                  <label for="item_011"><select  name="item_011" id="item_011">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+            
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/702.jpg"></img>
+                <div><strong>2-in-1 car charger</strong></div>
+                <div><strong>item:#012</strong></div>
+                <div>wholesales prices $2.75(each)</div>
+               
+                  <label for="item_012"><select  name="item_012" id="item_012">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+            
+
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/122.jpg"></img>
+                <div><strong>2-in-1 usb wall charger with cable</strong></div>
+                <div><strong>item:#013</strong></div>
+                
+                <div>wholesales prices $2.75(each)</div>
+               
+                  <label for="item_013"><select  name="item_013" id="item_013">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+            
+             <div style="border:2px solid black; background-color:white; color:black">
+                
+                <img src="./image/666.jpg"></img>
+                <div><strong>headphone for iphone15/16/samsung</strong></div>
+                <div><strong>item:#015</strong></div>
+           
+                <div>wholesales prices $2.75(each)</div>
+               
+                  <label for="item_015"><select  name="item_015" id="item_015">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                 <img src="./image/123.jpg"></img>
+                <div><strong>usb cable for iphone</strong></div>
+                <div><strong>item:#016</strong></div>
+                
+                <div>wholesales prices $1.75(each)</div>
+               
+                  <label for="item_016"><select  name="item_016" id="item_005">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+
+
+            <div style="border:2px solid black; background-color:white; color:black">
+               <img src="./image/125.jpg"></img>
+        
+                <div><strong>type-c cable to iphone</strong></div>
+                <div><strong>item:#017</strong></div>
+             
+                <div>wholesales prices $1.75(each)</div>
+               
+                  <label for="item_017"><select  name="item_017" id="item_017">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                 <img src="./image/708.jpg"></img>
+                <div><strong>for car phone holder</strong></div>
+                <div><strong>item:#018</strong></div>
+              
+                <div>wholesales prices $3.50(each)</div>
+               
+                  <label for="item_018"><select  name="item_018" id="item_018">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+          
+
+             <div style="border:2px solid black; background-color:white; color:black">
+                 <img src="./image/126.jpg"></img>
+                <div><strong>type-c usb cable</strong></div>
+                <div><strong>item:#019</strong></div>
+              
+                <div>wholesales prices $1.75(each)</div>
+               
+                  <label for="item_019"><select  name="item_019" id="item_019">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                 <img src="./image/551.jpg"></img>
+                <div><strong>powerbank for charger phone</strong></div>
+                <div><strong>item:#020</strong></div>
+              
+                <div>wholesales prices $12.50(each)</div>
+               
+                  <label for="item_020"><select  name="item_020" id="item_020">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                 <img src="./image/629.jpg"></img>
+                <div><strong>10ft usb type-c cable</strong></div>
+                <div><strong>item:#021</strong></div>
+              
+                <div>wholesales prices $2.25(each)</div>
+               
+                  <label for="item_021"><select  name="item_021" id="item_021">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+       
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                 <img src="./image/703.jpg"></img>
+                <div><strong>10ft usb cable for iphone</strong></div>
+                <div><strong>item:#022</strong></div>
+              
+                <div>wholesales prices $2.25(each)</div>
+               
+                  <label for="item_022"><select  name="item_022" id="item_022">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </label>
+            </div>
+
+
+             <div style="border:2px solid black; background-color:white; color:black">
+                 <img src="./image/755.jpg"></img>
+                <div><strong>car charger </strong></div>
+                <div><strong>item:#023</strong></div>
+              
+                <div>wholesales prices $5.50(each)</div>
+               
+                  <label for="item_023"><select  name="item_023" id="item_023">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+                      </div>
+
+                <div style="border:2px solid black; background-color:white; color:black">
+                 <img src="./image/742.jpg"></img>
+                <div><strong>2-in-1 charger for iphone</strong></div>
+                <div><strong>item:#025</strong></div>
+              
+                <div>wholesales prices $3.50(each)</div>
+               
+                  <label for="item_025"><select  name="item_025" id="item_025">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </div>
+
+
+
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                 <img src="./image/810.jpg"></img>
+                <div><strong>stand for phone</strong></div>
+                <div><strong>item:#026</strong></div>
+              
+                <div>wholesales prices $3.50(each)</div>
+               
+                  <label for="item_026"><select  name="item_026" id="item_026">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </div>
+
+
+            <div style="border:2px solid black; background-color:white; color:black">
+                 <img src="./image/812.jpg"></img>
+                <div><strong>car holder for phone</strong></div>
+                <div><strong>item:#027</strong></div>
+              
+                <div>wholesales prices $5.50(each)</div>
+               
+                  <label for="item_027"><select  name="item_027" id="item_027">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+            </div>
+
+                
+                <div style="border:2px solid black; background-color:white; color:black">
+                 <img src="./image/815.jpg"></img>
+                <div><strong>car holder for phone</strong></div>
+                <div><strong>item:#027</strong></div>
+              
+                <div>wholesales prices $4.25(each)</div>
+               
+                  <label for="item_027"><select  name="item_027" id="item_027">
+                    <option value="" for="perfect">select</option>
+                    <option value="6pcs">6pcs</option>
+                    <option value="12pcs">12pcs</option>
+                </select>
+
+            </div>
+
+            
+            <div id="text">
+             <label for="comment">send me a message or comment</label>
+
+                <textarea placeholder="please text here name,address,phone-number here, thanks you."></textarea>
+            <button type="submit">submit</button>
+            </div>
+
+
+
+
+          </form>
+
+<script src="/script.js"></script>
+
+</body>
+
 </html>
