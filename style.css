@@ -1,11 +1,12 @@
-body {
+/* /* body {
    
     background-size:cover;
     color:rgb(12, 2, 12);
-    background-color: rgb(122, 231, 71);
+    /* background-color: rgb(122, 231, 71); */}
+ */
 
 
-}
+
 h1 {
     margin: 10px auto;
     justify-items: center;
@@ -21,6 +22,8 @@ h1 {
     align-items: center;
     gap:15px;
 }
+
+/* 
 #container {
     
   display:flex;
@@ -34,39 +37,10 @@ h1 {
 
 
 
-}
-form {
-    display:flex;
-    flex-direction: column;
-    gap:10px;
-    padding: 15px;
-}
-
-form label{
-    
-    font-size: 25px;
-    margin-bottom: 10px;
- 
-}
-
-form input {
-    padding:8px;
-    border-radius: 10px;
-    border:none;
-}
-
-form button {
-    padding:8px;
-    outline:none;
-}
+} */
 
 
-form select {
-    padding:8px;
-
-}
-
-
+/* 
 form button {
     padding:8px;
     background-color:rgb(85, 140, 212);
@@ -76,12 +50,12 @@ form button {
     border-radius: 15px;
     cursor:pointer;
 
-}
+} */
 
-form label select option {
+/* form label select option {
     border-radius: 12px;
     padding:5px;
-}
+} */
 
 img {
     width:300px;
@@ -104,26 +78,13 @@ img {
     
  }
 
-
+/* 
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --dark-grey: #1b1b32;
-  --light-grey: #f5f6f7;
-  --black: #000;
-  --white: #fff;
-  --grey: #3b3b4f;
-  --golden-yellow: #fecc4c;
-  --yellow: #ffcc4c;
-  --gold: #feac32;
-  --orange: #ffac33;
-  --dark-orange: #f89808;
-} 
+} */
 
 
 .title {
@@ -235,8 +196,8 @@ img {
 
 
 img {
-  /* width:150px;
-  height:150px; */
+   width:150px;
+  height:150px; 
   max-width: 450px;
   max-height: 450px;
   box-shadow: 5px;
@@ -266,7 +227,7 @@ textarea {
 
 }
 
-
+/* 
 
 form {
     display:flex;
@@ -289,8 +250,8 @@ form input {
     border-radius: 10px;
     border:1px solid black;
     
-}
-
+} */
+/* 
 form button {
   
     padding:8px;
@@ -298,26 +259,77 @@ form button {
     margin-left:auto;
     margin-right:auto;
     
-}
+} */
 
-
+/* 
 form select {
     padding:8px; 
-}
+} */
 
   hr {
   height:22px;
   color:black;
   background-color: #000;
 }
-
+/* 
 form #option {
 padding:8px;
 
-}
+} */
 
 #cart-btn{
    
     font-size: 10px;
 }
 
+
+
+
+body { justify-items:center; padding-bottom:0px; padding-top:15px;font-family:sans-serif; }
+
+      
+
+#form { background: rgba(0, 0, 0, 0.15); padding-bottom:0px; position:absolute;top:575px;  width:398px;left: auto; right: auto; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+     
+
+#input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+      
+
+#input:focus { outline: none; }
+      
+
+#form > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+
+      
+#messages { list-style-type: none; margin: 0; padding: 0; }
+      
+#messages > li { padding: 0.5rem 1rem; }
+      
+#messages > li:nth-child(odd) { background: #efefef; }
+
+
+      
+#container-chat {
+        display:fixed;
+        flex-direction: column;
+        box-shadow: 5px;
+        width:400px;
+        height:600px;
+        background-color: rgb(185, 212, 48);
+        border:5px solid black;
+        
+      }
+
+      
+      
+      
+#chat{
+        padding-left:15px;
+        padding-top:10px;
+        justify-content: center;
+        width:387px;
+        height:50px;
+        background-color: #333;
+        color:white;
+      }
+ */
