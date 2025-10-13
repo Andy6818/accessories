@@ -32,7 +32,7 @@ const userSchema = new mongoose.Schema({
     // option:String,
     delivery:Date,
     comment:String,
-    
+
     item_090:String,
     item_001:String,
     item_002:String,
@@ -58,6 +58,9 @@ const userSchema = new mongoose.Schema({
     item_022:String,
     item_023:String,
     item_025:String,
+    item_026:String,
+    item_027:String,
+    item_028:String,
   
     orderDate: { type: Date, default: Date.now },
 
@@ -100,7 +103,10 @@ app.post("/submit-data",async(req,res)=>{
         item_021,
         item_022,
         item_023,
-        item_025
+        item_025,
+        item_026,
+        item_027,
+        item_028
      } =req.body
 
     const user = new Users ({
@@ -135,7 +141,10 @@ app.post("/submit-data",async(req,res)=>{
         item_021,
         item_022,
         item_023,
-        item_025
+        item_025,
+        item_026,
+        item_027,
+        item_028,
     
     })
     
