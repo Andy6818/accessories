@@ -12,17 +12,21 @@
   <p>free delivery only for newyork Queen,brooklyn,Manhhattan</p>
   <p>minimun order $50</p>
 
-  <form action="https://formspree.io/f/xldwrggp" method="post">
+  <!-- <form action="https://formspree.io/f/xldwrggp" method="post"> -->
       
-     
+     <form action="/submit-data" method="post">
 
 
     <button style="color:white"id="cart-btn" type="button" class="btn">
-        <span id="show-hide-cart">Show</span> Contact
+        <span id="show-hide-cart">show</span>submit
         
       </button>
 
-        <div style="border:5px solid black;background-color: rgb(193, 229, 231);color:rgb(3, 3, 3);" id="cart-container">
+    <div style="border:5px solid black;background-color: rgb(193, 229, 231);color:rgb(3, 3, 3);" id="cart-container">
+           
+      
+      <p style="color:red; font-size: 35px; ;">Total: $ <span name="total" id="total-amount">0</span></p>
+
           <label for="delivery">Select Date for Delivery:(No Sunday)</label>
           
           <input type="date" id="delivery" name="delivery" required> 
@@ -33,49 +37,59 @@
                 <textarea id="comment" name="comment"
                 value="comment" placeholder="please text you stores name,address,phone-number here, thanks you."></textarea>
             <button type="submit">submit</button>
-            </div>
+    </div>
 
    
   
     <div id="mainContainer">
     
            
-            <div style="border:2px solid black; background-color:white; color:black">
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
                 
+              <div><strong> Phone Holder</strong></div>
+
                 <img src="./image/2.jpg"></img>
-                <div><strong> Phone Holder</strong></div>
+                <br>
+           
                 <div><strong> item:#090</strong></div>
                 
                 <div>wholesales price $3.50(each)</div>
                
-                  <label for="item_090"><select  name="item_090" id="item_090">
+                  <label for="item_090">
+                    
+                    
+                  <select  name="item_090" id="item_090" onchange="calculate()">
                     <option value="" for="perfect">select</option>
-                    <option value="6pcs">6pcs</option>
-                    <option value="12pcs">12pcs</option>
+                    <option value="21 dollar for 6pcs car holder">6pcs for $21</option>
+                    <option value="42 dollar for 12pcs car holder">12pcs for $42</option>
                 </select>
-            </label>
+                   </label>
             </div>
         
-            <div style="border:2px solid black; background-color:white; color:black">
-                
-                <img src="./image/3.jpg"></img>
+
+
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
                 <div><strong>usb cable for iphone</strong></div>
+                <img src="./image/3.jpg"></img>
+                
                 <div><strong>item:#001</strong></div>
                 <div>wholesales prices $1.75(each)</div>
                 
                
-                  <label for="item_001"><select  name="item_001" id="item_001">
+                  <label for="item_001"><select  name="item_001" id="item_001" onchange="calculate()">
                     <option value="">select</option>
-                    <option for="value"value="6pcs">6pcs</option>
-                    <option for="value"value="12pcs">12pcs</option>
+                    <option value="10.5 for 6pcs cable for iphone">6pcs for $10.5</option>
+                    <option value="21 for 12pcs cable for iphone">12pcs for $21</option>
                 </select>
             </label>
             </div>
 
-           <div style="border:2px solid black; background-color:white; color:black">
-                
+
+
+           <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                   <div><strong>2-in-1 for iphone15/16/samsung</strong></div>
                 <img src="./image/809.jpg"></img>
-                <div><strong>2-in-1 for iphone15/16/samsung</strong></div>
+             
                 <div><strong>item:#002</strong></div>
               
                 <div>wholesales prices $3.75(each)</div>
@@ -88,10 +102,10 @@
             </label>
             </div>
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                 <div><strong>2-in-1 Wall charger</strong></div>
                 <img src="./image/101.jpg"></img>
-                <div><strong>2-in-1 Wall charger</strong></div>
+               
                 <div><strong>item:#003</strong></div>
               
                 <div>wholesales prices $3.00(each)</div>
@@ -106,10 +120,10 @@
 
 
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                
-                <img src="./image/102.jpg"></img>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
                 <div><strong>Stand Phone Holder</strong></div>
+                <img src="./image/102.jpg"></img>
+                
                 <div><strong>item:#004</strong></div>
                
                 <div>wholesales prices $3.25(each)</div>
@@ -122,9 +136,11 @@
             </label>
             </div>
 
-              <div style="border:2px solid black; background-color:white; color:black">
+              <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                
+                 <div><strong>headphone for iphone5/6/ipad/samsung</strong></div>
                 <img src="./image/706.jpg"></img>   
-                <div><strong>headphone for iphone5/6/ipad/samsung</strong></div>
+               
                 <div><strong>item:#005</strong></div>
                
                 <div>wholesales prices $1.75(each)</div>
@@ -137,10 +153,10 @@
             </label>
             </div>
             
-             <div style="border:2px solid black; background-color:white; color:black">
-                
+             <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                  <div><strong>bicycle phone holder</strong></div>
                 <img src="./image/105.jpg"></img>
-                <div><strong>bicycle phone holder</strong></div>
+              
                 <div><strong>item:#006</strong></div>
                 
                 <div>wholesales prices $4.50(each)</div>
@@ -154,10 +170,10 @@
             </div>
             
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                 <div><strong>10ft cable type-c to type-c</strong></div>
                 <img src="./image/121.jpg"></img>
-                <div><strong>10ft cable type-c to type-c</strong></div>
+               
                 <div><strong>item:#007</strong></div>
                 
                 <div>wholesales prices $2.25(each)</div>
@@ -171,10 +187,10 @@
             </div>
             
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                
-                <img src="./image/505.jpg"></img>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
                 <div><strong>type-c to type-c</strong></div>
+                <img src="./image/505.jpg"></img>
+                
                 <div><strong>item:#008</strong></div>
                 
                 <div>wholesales prices $2.25(each)</div>
@@ -188,10 +204,10 @@
             </div>
             
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                
-                <img src="./image/607.jpg"></img>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
                 <div><strong>Headphone for samsung/iphone 15/16</strong></div>
+                <img src="./image/607.jpg"></img>
+                
                 <div><strong>item:#009</strong></div>
                 <div>wholesales prices $2.75(each)</div>
                 
@@ -206,10 +222,10 @@
             
 
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                
-                <img src="./image/609.jpg"></img>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
                 <div><strong>Headphone for samsung/iphone15/16</strong></div>
+                <img src="./image/609.jpg"></img>
+                
                 <div><strong>item:#010</strong></div>
                 
                 <div>wholesales prices $2.75(each)</div>
@@ -224,10 +240,10 @@
             
 
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                
+            <div class="block-container"  style="border:2px solid black; background-color:white; color:black">
+                 <div><strong>2-in-1 charger for iphone/samsung</strong></div>
                 <img src="./image/701.jpg"></img>
-                <div><strong>2-in-1 charger for iphone/samsung</strong></div>
+               
                 <div><strong>item:#011</strong></div>
             
                 <div>wholesales prices $3.75(each)</div>
@@ -241,10 +257,10 @@
             </div>
             
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                
-                <img src="./image/702.jpg"></img>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
                 <div><strong>2-in-1 car charger</strong></div>
+                <img src="./image/702.jpg"></img>
+                
                 <div><strong>item:#012</strong></div>
                 <div>wholesales prices $2.75(each)</div>
                
@@ -258,10 +274,10 @@
             
 
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                
-                <img src="./image/122.jpg"></img>
+            <div class="block-container" class="block-container"style="border:2px solid black; background-color:white; color:black">
                 <div><strong>2-in-1 usb wall charger with cable</strong></div>
+                <img src="./image/122.jpg"></img>
+                
                 <div><strong>item:#013</strong></div>
                 
                 <div>wholesales prices $2.75(each)</div>
@@ -274,10 +290,10 @@
             </label>
             </div>
             
-             <div style="border:2px solid black; background-color:white; color:black">
-                
-                <img src="./image/666.jpg"></img>
+             <div class="block-container" style="border:2px solid black; background-color:white; color:black">
                 <div><strong>headphone for iphone15/16/samsung</strong></div>
+                <img src="./image/666.jpg"></img>
+                
                 <div><strong>item:#015</strong></div>
            
                 <div>wholesales prices $2.75(each)</div>
@@ -290,9 +306,11 @@
             </label>
             </div>
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                 <img src="./image/123.jpg"></img>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
                 <div><strong>usb cable for iphone</strong></div>
+              
+              <img src="./image/123.jpg"></img>   
+             
                 <div><strong>item:#016</strong></div>
                 
                 <div>wholesales prices $1.75(each)</div>
@@ -306,10 +324,12 @@
             </div>
 
 
-            <div style="border:2px solid black; background-color:white; color:black">
-               <img src="./image/125.jpg"></img>
-        
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+               
+              
                 <div><strong>type-c cable to iphone</strong></div>
+              <img src="./image/125.jpg"></img>
+        
                 <div><strong>item:#017</strong></div>
              
                 <div>wholesales prices $1.75(each)</div>
@@ -322,9 +342,11 @@
             </label>
             </div>
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                 <img src="./image/708.jpg"></img>
-                <div><strong>for car phone holder</strong></div>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                
+               <div><strong>for car phone holder</strong></div>
+              <img src="./image/708.jpg"></img>
+               
                 <div><strong>item:#018</strong></div>
               
                 <div>wholesales prices $3.50(each)</div>
@@ -338,9 +360,12 @@
             </div>
           
 
-             <div style="border:2px solid black; background-color:white; color:black">
-                 <img src="./image/126.jpg"></img>
-                <div><strong>type-c usb cable</strong></div>
+             <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                
+              
+                 <div><strong>type-c usb cable</strong></div>
+              <img src="./image/126.jpg"></img>
+             
                 <div><strong>item:#019</strong></div>
               
                 <div>wholesales prices $1.75(each)</div>
@@ -354,9 +379,11 @@
             </div>
 
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                 <img src="./image/551.jpg"></img>
-                <div><strong>powerbank for charger phone</strong></div>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                 
+                 <div><strong>powerbank for charger phone</strong></div>
+              <img src="./image/551.jpg"></img>
+             
                 <div><strong>item:#020</strong></div>
               
                 <div>wholesales prices $12.50(each)</div>
@@ -370,9 +397,11 @@
             </div>
 
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                 <img src="./image/629.jpg"></img>
-                <div><strong>10ft usb type-c cable</strong></div>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                 
+              <div><strong>10ft usb type-c cable</strong></div>
+              <img src="./image/629.jpg"></img>
+                
                 <div><strong>item:#021</strong></div>
               
                 <div>wholesales prices $2.25(each)</div>
@@ -386,9 +415,11 @@
             </div>
        
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                 <img src="./image/703.jpg"></img>
-                <div><strong>10ft usb cable for iphone</strong></div>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                 
+               <div><strong>10ft usb cable for iphone</strong></div>
+              <img src="./image/703.jpg"></img>
+               
                 <div><strong>item:#022</strong></div>
               
                 <div>wholesales prices $2.25(each)</div>
@@ -402,9 +433,11 @@
             </div>
 
 
-             <div style="border:2px solid black; background-color:white; color:black">
-                 <img src="./image/755.jpg"></img>
-                <div><strong>car charger </strong></div>
+             <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                 
+              <div><strong>car charger </strong></div>
+              <img src="./image/755.jpg"></img>
+                
                 <div><strong>item:#023</strong></div>
               
                 <div>wholesales prices $5.50(each)</div>
@@ -416,9 +449,11 @@
                 </select>
                       </div>
 
-                <div style="border:2px solid black; background-color:white; color:black">
-                 <img src="./image/742.jpg"></img>
-                <div><strong>2-in-1 charger for iphone</strong></div>
+                <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                 
+                 <div><strong>2-in-1 charger for iphone</strong></div>
+                  <img src="./image/742.jpg"></img>
+                
                 <div><strong>item:#025</strong></div>
               
                 <div>wholesales prices $3.50(each)</div>
@@ -433,14 +468,17 @@
 
 
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                 <img src="./image/810.jpg"></img>
-                <div><strong>stand for phone</strong></div>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                 
+              <div><strong>stand for phone</strong></div>
+              <img src="./image/810.jpg"></img>
+                
                 <div><strong>item:#026</strong></div>
               
                 <div>wholesales prices $3.50(each)</div>
                
-                  <label for="item_026"><select  name="item_026" id="item_026">
+                  <label for="item_026">
+                    <select  name="item_026" id="item_026">
                     <option value="" for="perfect">select</option>
                     <option value="6pcs">6pcs</option>
                     <option value="12pcs">12pcs</option>
@@ -448,9 +486,12 @@
             </div>
 
 
-            <div style="border:2px solid black; background-color:white; color:black">
-                 <img src="./image/812.jpg"></img>
-                <div><strong>car holder for phone</strong></div>
+            <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                
+                  <div><strong>car holder for phone</strong></div>
+              
+              <img src="./image/812.jpg"></img>
+            
                 <div><strong>item:#027</strong></div>
               
                 <div>wholesales prices $5.50(each)</div>
@@ -463,9 +504,11 @@
             </div>
 
                 
-          <div style="border:2px solid black; background-color:white; color:black">
-                 <img src="./image/815.jpg"></img>
-                <div><strong>car holder for phone</strong></div>
+          <div class="block-container" style="border:2px solid black; background-color:white; color:black">
+                 
+            <div><strong>car holder for phone</strong></div>
+            <img src="./image/815.jpg"></img>
+                
                 <div><strong>item:#027</strong></div>
               
                 <div>wholesales prices $4.25(each)</div>

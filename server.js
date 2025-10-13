@@ -13,7 +13,7 @@ app.use(express.static(__dirname));
 app.use(express.urlencoded({extended : true}));
 
 
-mongoose.connect("mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/")
+mongoose.connect("mongodb://127.0.0.1:27017/student")
 
 
 const eb = mongoose.connection
@@ -32,6 +32,7 @@ const userSchema = new mongoose.Schema({
     // option:String,
     delivery:Date,
     comment:String,
+    
     item_090:String,
     item_001:String,
     item_002:String,
@@ -56,9 +57,9 @@ const userSchema = new mongoose.Schema({
     item_021:String,
     item_022:String,
     item_023:String,
-    item_025:String
+    item_025:String,
   
-  
+    orderDate: { type: Date, default: Date.now },
 
 
 })

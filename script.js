@@ -20,3 +20,23 @@ cartBtn.addEventListener("click", () => {
   showHideCartSpan.textContent = isCartShowing ? "Hide" : "Show";
   cartContainer.style.display = isCartShowing ? "block" : "none";
 });
+
+
+function calculate(){
+
+let item1 = parseFloat(document.querySelector("#item_090").value) || 0;
+
+
+let item2 = parseFloat(document.querySelector("#item_001").value) || 0;
+
+
+
+
+const total = item1 + item2
+
+
+document.getElementById("total-amount").innerText = total;
+
+}
+
+calculate();
